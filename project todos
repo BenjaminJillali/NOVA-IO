@@ -1,0 +1,10 @@
+NOVA-IO
+
+Surface
+type,
+passable
+g-force
+
+environment types. passable->water, land, air, mud, stairs 
+
+create lists of possible terrain types in character class and each characerter can use a set
