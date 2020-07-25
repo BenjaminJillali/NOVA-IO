@@ -3,7 +3,7 @@ package com.example.nova_io;
 public class Grid {
     private int v_lenth;
     private int h_length;
-
+//not looking forward to this class.
     public Grid(int v_length){
         this.v_lenth = v_length;
     }
@@ -11,4 +11,6 @@ public class Grid {
     public int getV_lenth() {
         return v_lenth;
     }
+
+
 }
