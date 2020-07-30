@@ -11,7 +11,7 @@ public class Object {
     //height and length of the object for node tiles it occupise ie 2x3.
     private int node_pos[] = new int[2];
     private int y_length;
-    private int h_length;
+    private int x_length;
     public Object(String name, String img_Path, String type, int[] node_pos, int v_length, int h_length){
         this.name = name;
         this.type = type;
@@ -70,11 +70,11 @@ public class Object {
     }
 
     public void setH_length(int h_length) {
-        this.h_length = h_length;
+        this.x_length = h_length;
     }
 
     public int getH_length() {
-        return h_length;
+        return x_length;
     }
 
     public void setY_length(int y_length) {
