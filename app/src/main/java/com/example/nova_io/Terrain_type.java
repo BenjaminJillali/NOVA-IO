@@ -9,6 +9,7 @@ public class Terrain_type {
     }
     private void create_type_list(){
         this.node_type_list.put("floor", true);
+        this.node_type_list.put("character", false);
    }
 
     public HashMap getNode_type_list() {

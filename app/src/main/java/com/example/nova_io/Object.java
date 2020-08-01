@@ -10,11 +10,13 @@ public class Object {
     //nd_pos refers to the objects starting node number. y_length and h_length referes to the.
     //height and length of the object for node tiles it occupise ie 2x3.
     private int node_pos[] = new int[2];
+    private Node currentNode;
     private int y_length;
     private int x_length;
-    public Object(String name, String img_Path, String type, int[] node_pos, int v_length, int h_length){
+    public Object(String name, String img_Path, String type, Node currentNode, int[] node_pos, int v_length, int h_length){
         this.name = name;
         this.type = type;
+        this.currentNode = currentNode;
         this.node_pos[0] = node_pos[0];
         this.node_pos[1] = node_pos[1];
 
@@ -83,5 +85,15 @@ public class Object {
 
     public int getY_length() {
         return y_length;
+    }
+    public Node getCurrentNode(){
+        return this.currentNode;
+    }
+
+    public void setCurrentNode(Node currentNode, String type) {
+        currentNode.setType(type);
+        int[] positions = {currentNode.getX_position(), currentNode.getY_position()};
+        setNode_pos(positions);
+        this.currentNode = currentNode;
     }
 }

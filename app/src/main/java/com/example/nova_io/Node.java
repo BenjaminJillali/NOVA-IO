@@ -8,27 +8,34 @@ public class Node {
     private int y_position;
     private boolean passable = false;
     private String type;
-    private HashMap <String, Integer> node_dimensions;
-    public Node(int x_position, int y_position, Terrain_type terrain, String type, HashMap node_dimens){
+    private HashMap <String, Integer[]> node_dimensions;
+    private Terrain_type terrains = new Terrain_type();
+    private Integer[] center_coords;
+    public Node(int x_position, int y_position, String type, HashMap node_dimens){
         this.x_position = x_position;
         this.y_position = y_position;
-        setPassable(terrain, type);
+        setPassable(type);
         this.type = type;
         this.node_dimensions = node_dimens;
+        this.center_coords = node_center_dimens();
 
     }
-    public void setPassable(Terrain_type t_list, String t_type){
-        try{
-            this.passable = (boolean) t_list.getNode_type_list().get(t_type);
-        }catch (NullPointerException error){
-            Log.e("Terrain type error: ", error.getMessage());
-        }
+
+    public Integer[] node_center_dimens(){
+        Integer[] coords = new Integer[2];
+        Integer[] coords_side;
+        coords_side = node_dimensions.get("top_l");
+        coords[0] = coords_side[0];
+        coords[1] = coords_side[1];
+        coords_side = node_dimensions.get("top_r");
+        coords[0] = coords[0] + coords_side[0] / 2;
+        coords_side = node_dimensions.get("bottom_l");
+        coords[1] = coords[1] + coords_side[1] / 2;
+        return coords;
     }
-    public int node_center_width(){
-        return node_dimensions.get("left") + 15;
-    }
-    public int node_center_height(){
-        return node_dimensions.get("top") + 15;
+
+    public Integer[] getCenter_coords() {
+        return center_coords;
     }
 
     public void setX_position(int x_position) {
@@ -56,5 +63,20 @@ public class Node {
     }
     public boolean getPassable(){
         return passable;
+    }
+    public void setPassable(String t_type){
+        try{
+            this.passable = (boolean) terrains.getNode_type_list().get(t_type);
+        }catch (NullPointerException error){
+            Log.e("Terrain type error: ", error.getMessage());
+        }
+    }
+
+    public Terrain_type getTerrains() {
+        return terrains;
+    }
+
+    public HashMap<String, Integer[]> getNode_dimensions() {
+        return node_dimensions;
     }
 }
