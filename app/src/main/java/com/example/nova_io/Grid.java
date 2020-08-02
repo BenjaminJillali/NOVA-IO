@@ -82,6 +82,6 @@ public class Grid {
         return grid_nodes;
     }
     public Node getNode(int x_pos, int y_pos){
-        return grid_nodes[x_pos][y_pos];
+        return grid_nodes[y_pos][x_pos];
     }
 }

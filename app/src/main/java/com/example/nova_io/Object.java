@@ -13,13 +13,14 @@ public class Object {
     private Node currentNode;
     private int y_length;
     private int x_length;
-    public Object(String name, String img_Path, String type, Node currentNode, int[] node_pos, int v_length, int h_length){
+    public Object(String name, String img_Path, String type, Node currentNode, int[] node_pos, int x_length, int y_length){
         this.name = name;
         this.type = type;
         this.currentNode = currentNode;
         this.node_pos[0] = node_pos[0];
         this.node_pos[1] = node_pos[1];
-
+        this.x_length = x_length;
+        this.y_length = y_length;
         checkLink(img_Path);
         if(image_exists){
             this.img_Path = new File(img_Path);
@@ -95,5 +96,18 @@ public class Object {
         int[] positions = {currentNode.getX_position(), currentNode.getY_position()};
         setNode_pos(positions);
         this.currentNode = currentNode;
+    }
+    public void placeObject(Grid grid){
+        boolean placement_possible = false;
+        for(int i = 0; i < y_length; i++){
+            for(int n = 0; n < x_length; n++){
+                if(grid.getNode(node_pos[0] + n, node_pos[1] + i).getPassable()){
+                    placement_possible = true;
+                }else{
+                    placement_possible = false;
+                    return;
+                }
+            }
+        }
     }
 }
