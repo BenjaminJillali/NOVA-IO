@@ -63,7 +63,7 @@ public class Object extends AppCompatActivity{
 
     public void setNode_pos(int[] node_pos) {
         this.node_pos[0] = node_pos[0];
-        this.node_pos[0] = node_pos[0];
+        this.node_pos[1] = node_pos[1];
     }
 
     public int[] getNode_pos() {
@@ -99,8 +99,8 @@ public class Object extends AppCompatActivity{
         boolean placement_possible = true;
         for(int i = node_pos[1]; i < y_length; i++){
             for(int n = node_pos[0]; n < x_length; n++){
-                if(grid.getNode(node_pos[0] + n, node_pos[1] + i).getPassable()){
-                    placement_possible = true;
+                if(!grid.getNode(node_pos[0] + n, node_pos[1] + i).getPassable()){
+                    placement_possible = false;
                 }
             }
         }if(placement_possible){
