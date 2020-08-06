@@ -5,10 +5,12 @@ import java.util.HashMap;
 public class Grid {
     private int x_length;
     private int y_length;
-    private Node grid_nodes[][] = new Node[y_length][x_length];
-    public Grid(int x_length, int v_length){
+    private Node grid_nodes[][];
+    public Grid(int x_length, int v_length, String terrain_type){
         this.x_length = x_length;
         this.y_length = v_length;
+        this.grid_nodes = new Node[y_length][x_length];
+        createNode(terrain_type);
 
     }
 
@@ -20,7 +22,7 @@ public class Grid {
         return x_length;
     }
 
-    public void createNode(Terrain_type t_type){
+    public void createNode(String t_type){
         /*
         /dp_node_size is a hashmap that represents that generates the x and y coordinates for each node
         /corner top left, top right, bottom left bottom right each hold an x and y coordinate which increments
@@ -36,7 +38,7 @@ public class Grid {
         dp_node_size.put("bottom_l", new Integer[]{0, 30});
         dp_node_size.put("bottom_r", new Integer[]{30, 30});
         //loops through the virtical grid node positions
-        for(int i = 0; i <= y_length; i++){
+        for(int i = 0; i < y_length; i++){
             if(i > 0){
                 //retrieves the coordinates array from the map and incriments the virtical position by
                 //30 for each new row aside from the 1st one
