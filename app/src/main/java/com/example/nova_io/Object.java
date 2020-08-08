@@ -1,6 +1,7 @@
 package com.example.nova_io;
 
 import android.util.Log;
+import android.view.View;
 import android.widget.ImageView;
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -14,12 +15,11 @@ public class Object extends AppCompatActivity{
     private Boolean image_exists = false;
     //nd_pos refers to the objects starting node number. y_length and h_length referes to the.
     //height and length of the object for node tiles it occupise ie 2x3.
-    private int node_pos[] = new int[2];
+    private int[] node_pos = new int[2];
     private Node currentNode;
     private int y_length;
     private int x_length;
     public Object(String name, String img_Path, String type, Node currentNode, int[] node_pos, int x_length, int y_length){
-        this.object_img = (ImageView) findViewById(R.id.testImage);
         this.name = name;
         this.type = type;
         this.currentNode = currentNode;
@@ -95,7 +95,7 @@ public class Object extends AppCompatActivity{
         setNode_pos(positions);
         this.currentNode = currentNode;
     }
-    public void placeObject(Grid grid, String type){
+    public void placeObject(Grid grid, String type, View img){
         boolean placement_possible = true;
         for(int i = node_pos[1]; i < y_length; i++){
             for(int n = node_pos[0]; n < x_length; n++){
@@ -104,15 +104,18 @@ public class Object extends AppCompatActivity{
                 }
             }
         }if(placement_possible){
-          //  int img_id = getResources().getIdentifier("test_image", "drawable", "com.example.nova_io");
-           // ImageView character_test = (ImageView) findViewById(R.id.testImage);
-            this.object_img.setTranslationY(grid.getNode(node_pos[0], node_pos[1]).getCenter_coords()[1]);
+          //  int img_id = getResources().getIdentifier("test_image", "drawable", "com.example.nova_io");;
+            ImageView imgv = (ImageView) img;
+            imgv.setImageResource(R.drawable.yellow);
+            imgv.setVisibility(View.VISIBLE);
+            imgv.setTranslationY(grid.getNode(node_pos[0], node_pos[1]).getCenter_coords()[1]);
+            /*this.object_img.setTranslationY(grid.getNode(node_pos[0], node_pos[1]).getCenter_coords()[1]);
             this.object_img.setTranslationX(grid.getNode(node_pos[0], node_pos[1]).getCenter_coords()[0]);
             for(int i = node_pos[1]; i < y_length; i++){
                 for(int n = node_pos[0]; n < x_length; n++){
                     setCurrentNode(grid.getNode(n, i), type);
                 }
-            }
+            }*/
         }
     }
 }
