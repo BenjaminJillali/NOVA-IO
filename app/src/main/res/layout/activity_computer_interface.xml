@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBlack"
+    android:clickable="true"
+    android:padding="@dimen/box_inset_layout_padding"
+    android:paddingLeft="10dp"
+    android:paddingTop="10dp"
+    android:paddingRight="10dp"
+    tools:context=".ComputerInterface"
+    tools:deviceIds="wear">
+
+
+    <ImageView
+        android:id="@+id/background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/computer_interface_background_mermaid"
+        android:text="Screen Orientation Lock" />
+
+    <ImageView
+        android:id="@+id/bar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/computer_interface_bar"
+        android:text="Screen Orientation Lock" />
+
+    <ImageView
+        android:id="@+id/iconDiagnostics"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="50dp"
+        android:layout_marginBottom="90dp"
+        android:alpha="0.8"
+        android:src="@drawable/computer_interface_icon_diagnostics" />
+
+    <ImageView
+        android:id="@+id/iconManual"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="50dp"
+        android:layout_marginBottom="170dp"
+        android:alpha="0.8"
+        android:src="@drawable/computer_interface_icon_manual" />
+
+    <ImageView
+        android:id="@+id/iconConsole"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="115dp"
+        android:alpha="0.8"
+        android:src="@drawable/computer_interface_icon_console" />
+
+    <ImageView
+        android:id="@+id/iconInventory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="40dp"
+        android:alpha="0.8"
+        android:src="@drawable/computer_interface_icon_inventory" />
+
+    <ImageView
+        android:id="@+id/iconNovaIO"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="125dp"
+        android:layout_marginTop="40dp"
+        android:alpha="0.8"
+        android:src="@drawable/computer_interface_icon_nova_io" />
+
+    <ImageView
+        android:id="@+id/iconCrewPortalOS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="90dp"
+        android:alpha="0.8"
+        android:src="@drawable/computer_interface_icon_crew_portal_os" />
+
+</RelativeLayout>

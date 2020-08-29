@@ -13,7 +13,8 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_computer_interface);
+
         /*Grid base_terrain = new Grid(30, 30, "floor");
         int[] position = {6, 4};
         Character bob = new Character("Hobonaut", "yellow", "character", base_terrain.getNode(6, 4), position, 1, 1, 3);

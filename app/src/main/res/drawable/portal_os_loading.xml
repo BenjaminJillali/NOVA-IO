@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android" android:oneshot="true">
+    <item android:drawable="@drawable/portal_os_loading0000" android:duration="100" />
+    <item android:drawable="@drawable/portal_os_loading0001" android:duration="100" />
+    <item android:drawable="@drawable/portal_os_loading0002" android:duration="100" />
+    <item android:drawable="@drawable/portal_os_loading0003" android:duration="100" />
+    <item android:drawable="@drawable/portal_os_loading0004" android:duration="100" />
+    <item android:drawable="@drawable/portal_os_loading0005" android:duration="100" />
+    <item android:drawable="@drawable/portal_os_loading0006" android:duration="100" />
+    <item android:drawable="@drawable/portal_os_loading0007" android:duration="100" />
+    <item android:drawable="@drawable/portal_os_loading0008" android:duration="100" />
+    <item android:drawable="@drawable/portal_os_loading0009" android:duration="100" />
+    <item android:drawable="@drawable/portal_os_loading0000" android:duration="100" />
+    <item android:drawable="@drawable/portal_os_loading0001" android:duration="100" />
+    <item android:drawable="@drawable/portal_os_loading0002" android:duration="100" />
+    <item android:drawable="@drawable/portal_os_loading0003" android:duration="100" />
+    <item android:drawable="@drawable/portal_os_loading0004" android:duration="100" />
+    <item android:drawable="@drawable/portal_os_loading0005" android:duration="100" />
+    <item android:drawable="@drawable/portal_os_loading0006" android:duration="100" />
+    <item android:drawable="@drawable/portal_os_loading0007" android:duration="100" />
+    <item android:drawable="@drawable/portal_os_loading0008" android:duration="100" />
+    <item android:drawable="@drawable/portal_os_loading0009" android:duration="100" />
+    <item android:drawable="@drawable/portal_os_loading0000" android:duration="100" />
+    <item android:drawable="@drawable/portal_os_loading0001" android:duration="100" />
+    <item android:drawable="@drawable/portal_os_loading0002" android:duration="100" />
+    <item android:drawable="@drawable/portal_os_loading0003" android:duration="100" />
+    <item android:drawable="@drawable/portal_os_loading0004" android:duration="100" />
+    <item android:drawable="@drawable/portal_os_loading0005" android:duration="100" />
+    <item android:drawable="@drawable/portal_os_loading0006" android:duration="100" />
+    <item android:drawable="@drawable/portal_os_loading0007" android:duration="100" />
+    <item android:drawable="@drawable/portal_os_loading0008" android:duration="100" />
+    <item android:drawable="@drawable/portal_os_loading0009" android:duration="100" />
+    <item android:drawable="@drawable/portal_os_loading0000" android:duration="100" />
+    <item android:drawable="@drawable/portal_os_loading0001" android:duration="100" />
+    <item android:drawable="@drawable/portal_os_loading0002" android:duration="100" />
+    <item android:drawable="@drawable/portal_os_loading0003" android:duration="100" />
+    <item android:drawable="@drawable/portal_os_loading0004" android:duration="100" />
+    <item android:drawable="@drawable/portal_os_loading0005" android:duration="100" />
+    <item android:drawable="@drawable/portal_os_loading0006" android:duration="100" />
+    <item android:drawable="@drawable/portal_os_loading0007" android:duration="100" />
+    <item android:drawable="@drawable/portal_os_loading0008" android:duration="100" />
+    <item android:drawable="@drawable/portal_os_loading0009" android:duration="100" />
+
+    <item android:drawable="@drawable/portal_os_desktop" android:duration="2000"/>
+    <item android:drawable="@drawable/portal_os_crew0001" android:duration="100"/>
+    <item android:drawable="@drawable/portal_os_crew0002" android:duration="1000"/>
+    <item android:drawable="@drawable/portal_os_crew0003" android:duration="1000"/>
+    <item android:drawable="@drawable/portal_os_crew0004" android:duration="1000"/>
+</animation-list>

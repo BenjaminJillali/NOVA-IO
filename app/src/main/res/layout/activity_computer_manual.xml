@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#212621"
+    tools:context=".ComputerManual">
+
+    <ImageView
+        android:id="@+id/background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/computer_manual"
+        android:text="Screen Orientation Lock" />
+
+    <ImageView
+        android:id="@+id/exitButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="4dp"
+        android:onClick="exitButton"
+        app:srcCompat="@drawable/exit_button" />
+
+    <TextView
+        android:id="@+id/novaScriptText"
+        android:layout_width="392dp"
+        android:layout_height="253dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="298dp"
+        android:layout_marginTop="64dp"
+        android:fontFamily="@font/pixel_font"
+        android:text="TextView"
+        android:textSize="6sp" />
+
+    <TextView
+        android:id="@+id/contentsWelcome"
+        android:layout_width="189dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="77dp"
+        android:fontFamily="@font/pixel_font"
+        android:textSize="8sp"
+        android:text="Welcome" />
+
+    <TextView
+        android:id="@+id/contentsSyntax"
+        android:layout_width="189dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="102dp"
+        android:fontFamily="@font/pixel_font"
+        android:textSize="8sp"
+        android:text="Syntax" />
+
+    <TextView
+        android:id="@+id/contentsKeywords"
+        android:layout_width="189dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="128dp"
+        android:fontFamily="@font/pixel_font"
+        android:textSize="8sp"
+        android:text="Keywords" />
+
+    <TextView
+        android:id="@+id/contentsMovementLibrary"
+        android:layout_width="189dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="154dp"
+        android:fontFamily="@font/pixel_font"
+        android:textSize="8sp"
+        android:text="Movement.lib" />
+
+</RelativeLayout>

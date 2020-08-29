@@ -1,3 +1,33 @@
 <resources>
     <string name="app_name">NOVA-IO</string>
+    <string name="title_activity_computer_interface">ComputerInterface</string>
+    <!--
+    This string is used for square devices and overridden by hello_world in
+    values-round/strings.xml for round devices.
+    -->
+    <string name="hello_world">Hello Square World!</string>
+
+
+    <string name="welcome_text"><p><b>NOVA-script: a simplified scripting language for bot control.</b>\n</p>
+        <p>\nThe basic syntax requires that individual instructions are contained on a single line.</p>
+	    <p>\nThere are no terminal characters and indentation is irrelevant.</p>
+	    <p>\nNOVA-script works on the basis of tags, which means that loops, conditional statements
+        and functions must have start and end tags.</p></string>
+
+    <string name="syntax_text"><p><b>Instructions have the following format:</b></p>
+        <p>\n\n<font fgcolor='#004000'>keyword\t</font></p>
+        <p>\n<i>or</i></p>
+        <p>\n<font fgcolor='#004000'>keyword</font> <font fgcolor='#101010'>:</font>
+            <font fgcolor='#500000'>parameter1</font><font fgcolor='#101010'>,</font>
+            <font fgcolor='#500000'>parameter2</font></p>
+        <p>\n\nTags determine the start and end of groups of instructions such as loops, conditional statements and functions.</p>
+        <p>\n<b>Example code snippet:\n</b></p>
+        <p>\n\t\t\t<font fgcolor='#004000'>if</font> <font fgcolor='#101010'>:</font>
+            <font fgcolor='#500000'>a</font><font fgcolor='#101010'>>=</font><font fgcolor='#404040'>10</font>
+            \n\t\t\t<font fgcolor='#500000'>a</font> <font fgcolor='#101010'>=</font> <font fgcolor='#404040'>0</font>
+            \n\t\t\t<font fgcolor='#004000'>end_if</font>\n</p>
+        <p>\nIn the previous example, if the variable <i><b>a</b></i> is greater than or equal to 10, its value is changed to 0.</p>
+    </string>
+    <string name="keywords_text"></string>
+    <string name="movementLibrary_text"></string>
 </resources>
