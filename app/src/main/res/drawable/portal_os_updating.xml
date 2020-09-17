@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android" android:oneshot="true">
+    <item android:drawable="@drawable/portal_os_updating0000" android:duration="200" />
+    <item android:drawable="@drawable/portal_os_updating0001" android:duration="200" />
+    <item android:drawable="@drawable/portal_os_updating0002" android:duration="200" />
+    <item android:drawable="@drawable/portal_os_updating0003" android:duration="200" />
+    <item android:drawable="@drawable/portal_os_updating0004" android:duration="500" />
+
+    <item android:drawable="@drawable/portal_os_bsod0000" android:duration="100" />
+    <item android:drawable="@drawable/portal_os_bsod0001" android:duration="100" />
+    <item android:drawable="@drawable/portal_os_bsod0002" android:duration="100" />
+    <item android:drawable="@drawable/portal_os_bsod0003" android:duration="100" />
+    <item android:drawable="@drawable/portal_os_bsod0004" android:duration="3000" />
+</animation-list>

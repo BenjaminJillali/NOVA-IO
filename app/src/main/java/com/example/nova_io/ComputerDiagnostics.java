@@ -51,7 +51,7 @@ public class ComputerDiagnostics extends AppCompatActivity {
         display.getMetrics(outMetrics);
         int height = outMetrics.heightPixels;
         int width  = outMetrics.widthPixels;
-        System.out.println("height : " + height + "    width : " + width);
+        //System.out.println("height : " + height + "    width : " + width);
 
         // layout parameters for the fuel percentage text
         ViewGroup.MarginLayoutParams marginParamsFuel = (ViewGroup.MarginLayoutParams) fuelPercentageText.getLayoutParams();

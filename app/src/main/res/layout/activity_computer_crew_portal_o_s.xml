@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#181a1c"
-    tools:context=".ComputerNovaIO">
+    tools:context=".ComputerCrewPortalOS">
 
     <ImageView
         android:id="@+id/background_imageView"
@@ -17,6 +17,42 @@
         android:layout_centerInParent="true"
         android:layout_marginStart="0dp"
         android:background="@drawable/portal_os_loading" />
+
+    <ImageView
+        android:id="@+id/backButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="264dp"
+        android:layout_marginBottom="63dp"
+        android:visibility="invisible"
+        app:srcCompat="@drawable/back_button"
+        tools:visibility="invisible" />
+
+    <ImageView
+        android:id="@+id/nextButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="182dp"
+        android:layout_marginBottom="66dp"
+        android:visibility="invisible"
+        app:srcCompat="@drawable/next_button2"
+        tools:visibility="invisible" />
+
+    <ImageView
+        android:id="@+id/nextButton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="519dp"
+        android:layout_marginTop="333dp"
+        android:visibility="invisible"
+        app:srcCompat="@drawable/next_button2"
+        tools:visibility="invisible" />
 
     <ImageView
         android:id="@+id/exitButton"
